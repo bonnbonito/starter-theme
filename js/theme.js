@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
 	$('.entry-content').imagesLoaded().progress( function( instance ) {
 		$('.entry-content img').each( function(){
 				// Create new offscreen image to test
-				$(this).addClass('img-responsive');
+				$(this).addClass('img-fluid');
 			});
 	});
 
