@@ -115,6 +115,11 @@ function bonnjoel_scripts() {
 add_action( 'wp_enqueue_scripts', 'bonnjoel_scripts' );
 
 /**
+ * Security feature.
+ */
+require get_template_directory() . '/inc/security.php';
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
