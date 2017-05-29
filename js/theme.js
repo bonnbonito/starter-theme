@@ -44,5 +44,9 @@ jQuery(document).ready(function($) {
 		/* Act on the event */
 		enableScroll();
 	});
+
+	$('.main.menu  .ui.dropdown').dropdown({
+		on: 'hover'
+	});
 	
 });

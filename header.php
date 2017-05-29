@@ -46,7 +46,13 @@
 				<span class="middle-bar"></span>
 				<span class="bottom-bar"></span>
 			</a>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<?php wp_nav_menu( array( 
+				'theme_location' => 'primary', 
+				'menu_id' => 'primary-menu', 
+				'container' => false, 
+				'walker' => new Walker_Nav_Primary,
+				'items_wrap' => '<div id="%1$s" class="ui main %2$s">%3$s</div>' 
+			) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
