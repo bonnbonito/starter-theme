@@ -145,6 +145,11 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
+ * Load Walker file
+ */
+require get_template_directory() . '/inc/walker.php';
+
+/**
  * Load Custom Functions
  */
 require get_template_directory() . '/custom_functions.php';
