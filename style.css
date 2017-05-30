@@ -13,6 +13,8 @@ Tags:
 
 html, body {
 	height: 100%;
+   font-family: 'Lato', sans-serif;
+   font-weight: 300;
 }
 
 html.mm-opened {
@@ -118,3 +120,6 @@ html.mm-opened #hamburger span.middle-bar {
 	background: #675B51;
 }
 
+.main-navigation a {
+   color: #fff;
+}
