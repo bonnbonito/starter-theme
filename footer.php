@@ -38,7 +38,7 @@
 			"theme-dark"
 			],		
 			"navbar": {
-				"add": false
+				"add": true
 			},
 			"navbars": [		
 			{
