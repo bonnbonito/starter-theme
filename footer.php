@@ -36,20 +36,20 @@
 			"extensions": [
 			"pagedim-black",
 			"theme-dark"
-			],		
+			],
 			"navbar": {
 				"add": true
 			},
-			"navbars": [		
+			"navbars": [
 			{
 				"position": "top"
-				
+
 			},
 			{
 				"position": "bottom",
-				"content": [				
+				"content": [
 				"<a class='fa fa-facebook' href='#/' title='Follow Our Facebook'></a>",
-				"<a class='fa fa-twitter' href='#/' title='Follow Our Twitter'></a>",			
+				"<a class='fa fa-twitter' href='#/' title='Follow Our Twitter'></a>",
 				"<a class='fa fa-instagram' href='#/' title='Follow Our Instagram'></a>"
 				]
 			}
@@ -59,14 +59,7 @@
 		var API = $("#mobile-menu").data( "mmenu" );
 
 		$(".menu-toggle").click(function() {
-			API.open();
-			$('.mm-panels>.mm-panel').niceScroll({
-				zindex : 999999,
-				cursorwidth : 10,
-				cursorborder : "1px solid #000",
-				cursoropacitymax : .7,
-				cursorminheight: 5
-			});	
+			API.open();			
 		});
 	});
 </script>
