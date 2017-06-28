@@ -32,25 +32,25 @@
 			FastClick.attach(document.body);
 		});
 
-		$("#mobile-menu").mmenu({
-			"extensions": [
-			"pagedim-black",
-			"theme-dark"
+		$('#mobile-menu').mmenu({
+			'extensions': [
+			'pagedim-black',
+			'theme-dark'
 			],
-			"navbar": {
-				"add": true
+			'navbar': {
+				'add': true
 			},
-			"navbars": [
+			'navbars': [
 			{
-				"position": "top"
+				'position': 'top'
 
 			},
 			{
-				"position": "bottom",
-				"content": [
-				"<a class='fa fa-facebook' href='#/' title='Follow Our Facebook'></a>",
-				"<a class='fa fa-twitter' href='#/' title='Follow Our Twitter'></a>",
-				"<a class='fa fa-instagram' href='#/' title='Follow Our Instagram'></a>"
+				'position': 'bottom',
+				'content': [
+				'<a href="#/" title="Follow Our Facebook"><i class="facebook f icon"></i></a>',
+				'<a href="#/" title="Follow Our Twitter"><i class="twitter icon"></i></a>',
+				'<a href="#/" title="Follow Our Instagram"><i class="instagram icon"></i></a>',
 				]
 			}
 			]
@@ -59,7 +59,7 @@
 		var API = $("#mobile-menu").data( "mmenu" );
 
 		$(".menu-toggle").click(function() {
-			API.open();			
+			API.open();
 		});
 	});
 </script>
