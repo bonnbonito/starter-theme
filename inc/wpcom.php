@@ -1,6 +1,6 @@
 <?php
 /**
- * WordPress.com-specific functions and definitions.
+ * WordPress.com-specific functions and definitions
  *
  * This file is centrally included from `wp-content/mu-plugins/wpcom-theme-compat.php`.
  *
@@ -12,7 +12,7 @@
  *
  * @global array $themecolors
  */
-function bonnjoel_wpcombonnjoeletup() {
+function bonnjoel_wpcom_setup() {
 	global $themecolors;
 
 	// Set theme colors for third party services.
@@ -26,4 +26,4 @@ function bonnjoel_wpcombonnjoeletup() {
 		);
 	}
 }
-add_action( 'after_setup_theme', 'bonnjoel_wpcombonnjoeletup' );
+add_action( 'after_setup_theme', 'bonnjoel_wpcom_setup' );

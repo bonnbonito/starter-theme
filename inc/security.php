@@ -14,14 +14,14 @@ remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
 Show less info to users on failed login for security.
 (Will not let a valid username be known.)
 */
-function show_less_login_info() { 
-	return "<strong>ERROR</strong>: Stop guessing!"; 
+function show_less_login_info() {
+	return "<strong>ERROR</strong>: Stop guessing!";
 }
 add_filter( 'login_errors', 'show_less_login_info' );
 /*
 Do not generate and display WordPress version
 */
-function no_generator()  { 
-	return ''; 
+function no_generator()  {
+	return '';
 }
 add_filter( 'the_generator', 'no_generator' );
