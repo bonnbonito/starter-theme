@@ -28,6 +28,44 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<nav id="mobile-menu" class="mobile-menu" role="navigation">
+    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+</nav><!-- #site-navigation -->
+
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(function() {
+            FastClick.attach(document.body);
+        });
+        $('#mobile-menu').mmenu({
+            'extensions': [
+                'pagedim-black',
+                'theme-dark'
+            ],
+            'navbar': {
+                'add': true
+            },
+            'navbars': [
+                {
+                    'position': 'top'
+                },
+                {
+                    'position': 'bottom',
+                    'content': [
+                        '<a href="#/" title="Follow Our Facebook"><i class="facebook f icon"></i></a>',
+                        '<a href="#/" title="Follow Our Twitter"><i class="twitter icon"></i></a>',
+                        '<a href="#/" title="Follow Our Instagram"><i class="instagram icon"></i></a>',
+                    ]
+                }
+            ]
+        });
+        var API = $("#mobile-menu").data( "mmenu" );
+        $(".menu-toggle").click(function() {
+            API.open();
+        });
+    });
+</script>
+
 <?php wp_footer(); ?>
 
 </body>
