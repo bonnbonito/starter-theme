@@ -12,7 +12,7 @@ function bonnjoel_register_required_plugins(){
 		[
 			'name'              =>  'Advanced Custom Fields Pro',
 			'slug'              =>  'advanced-custom-fields-pro',
-			'source'            =>  get_template_directory() . '/plugins/advanced-custom-fields-pro.zip',
+			'source'            =>  get_template_directory() . '/inc/plugins/advanced-custom-fields-pro.zip',
 			'required'          =>  true
 		]
 	];
