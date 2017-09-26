@@ -7,6 +7,12 @@
  * @package BonnJoel
  */
 
+require_once( get_template_directory() . '/inc/libs/class-tgm-plugin-activation.php' );
+include( get_template_directory() . '/inc/register-plugins.php' );
+
+add_action( 'tgmpa_register', 'bonnjoel_register_required_plugins' );
+
+
 function bonnjoel_addmore_scripts() {
 	/*
 	 * Enqueue custom scripts and styles
