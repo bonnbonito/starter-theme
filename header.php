@@ -42,14 +42,20 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
+		<a id="hamburger" href="#" class="menu-toggle" >
+			<span class="top-bar"></span>
+			<span class="middle-bar"></span>
+			<span class="bottom-bar"></span>
+		</a>
+
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'bonnjoel' ); ?></button>
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-			?>
+			<?php wp_nav_menu( array(
+				'theme_location' => 'menu-1',
+				'menu_id' => 'primary-menu',
+				'container' => false,
+				'walker' => new Walker_Nav_Primary,
+				'items_wrap' => '<div id="%1$s" class="ui secondary %2$s">%3$s</div>'
+			) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 

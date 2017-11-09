@@ -29,7 +29,7 @@
 </div><!-- #page -->
 
 <nav id="mobile-menu" class="mobile-menu" role="navigation">
-    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+    <?php wp_nav_menu( array( 'theme_location' => 'menu-1' ) ); ?>
 </nav><!-- #site-navigation -->
 
 <script type="text/javascript">
