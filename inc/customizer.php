@@ -1,8 +1,8 @@
 <?php
 /**
- * BonnJoel Theme Customizer
+ * Bonn Joel Theme Customizer
  *
- * @package BonnJoel
+ * @package Bonn_Joel
  */
 
 /**

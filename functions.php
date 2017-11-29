@@ -1,10 +1,10 @@
 <?php
 /**
- * BonnJoel functions and definitions
+ * Bonn Joel functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package BonnJoel
+ * @package Bonn_Joel
  */
 
 if ( ! function_exists( 'bonnjoel_setup' ) ) :
@@ -19,7 +19,7 @@ if ( ! function_exists( 'bonnjoel_setup' ) ) :
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on BonnJoel, use a find and replace
+		 * If you're building a theme based on Bonn Joel, use a find and replace
 		 * to change 'bonnjoel' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'bonnjoel', get_template_directory() . '/languages' );
@@ -150,6 +150,20 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Load Jetpack compatibility file.
+ */
+if ( defined( 'JETPACK__VERSION' ) ) {
+	require get_template_directory() . '/inc/jetpack.php';
+}
+
+/**
+ * Load WooCommerce compatibility file.
+ */
+if ( class_exists( 'WooCommerce' ) ) {
+	require get_template_directory() . '/inc/woocommerce.php';
+}
+
+/**
  * Security additions.
  */
 require get_template_directory() . '/inc/security.php';
@@ -159,12 +173,6 @@ require get_template_directory() . '/inc/security.php';
  */
 require get_template_directory() . '/inc/walker.php';
 
-/**
- * Load Jetpack compatibility file.
- */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
-}
 
 /**
  * Load Custom Functions.

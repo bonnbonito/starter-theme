@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package BonnJoel
+ * @package Bonn_Joel
  */
 
 get_header(); ?>

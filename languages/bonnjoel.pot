@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: BonnJoel 1.0.0\n"
+"Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
 "POT-Creation-Date: 2016-12-23 16:00+0100\n"
 "MIME-Version: 1.0\n"
@@ -140,7 +140,7 @@ msgid "_s"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "http://underscores.me/"
+msgid "https://underscores.me/"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -156,7 +156,7 @@ msgid "Automattic"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://automattic.com/"
+msgid "https://automattic.com/"
 msgstr ""
 
 #: comments.php:40

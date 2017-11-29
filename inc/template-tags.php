@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package BonnJoel
+ * @package Bonn_Joel
  */
 
 if ( ! function_exists( 'bonnjoel_posted_on' ) ) :
