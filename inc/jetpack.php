@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package Bonn_Joel
+ * @package bonnjoel
  */
 
 /**
@@ -27,13 +27,18 @@ function bonnjoel_jetpack_setup() {
 
 	// Add theme support for Content Options.
 	add_theme_support( 'jetpack-content-options', array(
-		'post-details' => array(
+		'post-details'    => array(
 			'stylesheet' => 'bonnjoel-style',
 			'date'       => '.posted-on',
 			'categories' => '.cat-links',
 			'tags'       => '.tags-links',
 			'author'     => '.byline',
 			'comment'    => '.comments-link',
+		),
+		'featured-images' => array(
+			'archive'    => true,
+			'post'       => true,
+			'page'       => true,
 		),
 	) );
 }

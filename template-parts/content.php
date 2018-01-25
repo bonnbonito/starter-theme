@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Bonn_Joel
+ * @package bonnjoel
  */
 
 ?>
@@ -25,6 +25,8 @@
 		<?php
 		endif; ?>
 	</header><!-- .entry-header -->
+
+	<?php bonnjoel_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php

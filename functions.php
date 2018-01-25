@@ -1,10 +1,10 @@
 <?php
 /**
- * Bonn Joel functions and definitions
+ * bonnjoel functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Bonn_Joel
+ * @package bonnjoel
  */
 
 if ( ! function_exists( 'bonnjoel_setup' ) ) :
@@ -19,7 +19,7 @@ if ( ! function_exists( 'bonnjoel_setup' ) ) :
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Bonn Joel, use a find and replace
+		 * If you're building a theme based on bonnjoel, use a find and replace
 		 * to change 'bonnjoel' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'bonnjoel', get_template_directory() . '/languages' );
@@ -159,6 +159,10 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
  * Load WooCommerce compatibility file.
  */
+if ( class_exists( 'WooCommerce' ) ) {
+	require get_template_directory() . '/inc/woocommerce.php';
+}
+
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
