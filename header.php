@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package bonnjoel
+ * @package Bonn_Joel
  */
 
 ?>
@@ -40,6 +40,13 @@
 				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 			<?php
 			endif; ?>
+
+			<a id="hamburger" href="#" class="menu-toggle" >
+				<span class="top-bar"></span>
+				<span class="middle-bar"></span>
+				<span class="bottom-bar"></span>
+			</a>
+
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
@@ -48,6 +55,9 @@
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',
 					'menu_id'        => 'primary-menu',
+					'container' => false,
+					'walker' => new Walker_Nav_Primary,
+					'items_wrap' => '<div id="%1$s" class="ui secondary %2$s">%3$s</div>'
 				) );
 			?>
 		</nav><!-- #site-navigation -->

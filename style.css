@@ -74,7 +74,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 }
 
 @media screen and (min-width: 37.5em) {
-	.menu-toggle {
+	.menu-toggle.menu-toggle.menu-toggle {
 		display: none;
 	}
 	.main-navigation ul {
